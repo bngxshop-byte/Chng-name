@@ -12,7 +12,7 @@ key = bytes([89, 103, 38, 116, 99, 37, 68, 69, 117, 104, 54, 37, 90, 99, 94, 56]
 iv = bytes([54, 111, 121, 90, 68, 114, 50, 50, 69, 51, 121, 99, 104, 106, 77, 37])
 
 url = "https://loginbp.ggblueshark.com/MajorModifyNickname"
-freefire_version = "OB50"
+freefire_version = "OB51"
 
 @app.route("/name", methods=["GET"])
 def change_name():
@@ -60,4 +60,5 @@ def change_name():
 
 
 if __name__ == "__main__":
+
     app.run(host="0.0.0.0", port=5000, debug=True)
